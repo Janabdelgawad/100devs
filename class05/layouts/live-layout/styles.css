@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+    height: 500px;
+    width: 500px;
+    border: 1px green solid;
+}
+
+header, footer {
+    height: 100px;
+    background-color: rgb(174, 174, 231);
+    clear: both;
+}
+
+section {
+    height: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    width: 33.3333%;
+    float: left;
+    background-color: rgb(254, 216, 222);
+}
+

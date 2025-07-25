@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+    height: 100vh;
+    width: 100vw;
+    border: 1px green solid;
+}
+
+header, footer {
+    height: 20%;
+    background-color: rgb(174, 174, 231);
+}
+
+section {
+    height: 30%;
+    border: 1px rgb(0, 0, 0) solid;
+}
+
+.sec1 section{
+    background-color: aqua;
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+
+.sec2 section {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: brown;
+}

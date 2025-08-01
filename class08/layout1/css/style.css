@@ -39,7 +39,6 @@ a {
 }
 header {
   height: 60px;
-  margin: auto 0;
 }
 header > * {
   width: 33.3333%;
@@ -63,11 +62,11 @@ header + section {
   padding-top:  100px;
 }
 div + section {
-  height: 400px;
-  padding: 100px;
+  height: 200px;
+  padding: auto;
 }
 div + section > *,
-section + section + section > *{
+section + section + section{
   text-align: center;
 }
 div + section + section {
@@ -78,18 +77,22 @@ div + section + section > * {
   width: 50%;
   float: left;
   text-align: center;
-  padding: 120px 20px;
+  padding: 50px 20px;
 }
 footer {
   background-color: rgb(18, 27, 61);
-  height: 320px;
+  height: 400px;
   padding: 0 20px;
+  margin-top: 20px;
 }
 footer * {
   margin: 15px 0;
   color: white;
   list-style: none;
   padding: 0;
+} 
+ul li {
+  margin-right: 40px;
 }
 footer > section > ul > * {
   float: left;
@@ -121,9 +124,6 @@ footer img {
   border-top: 1px solid white;
   padding-top: 15px;
 }
-
-
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

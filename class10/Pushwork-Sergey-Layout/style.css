@@ -1,0 +1,1432 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root {
+  --primary-color: #141a28;
+  --btn-color: #3b414f;
+  --bg-color: #f8f8fa;
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: #989ca1;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+span {
+  color: var(--primary-color);
+}
+footer span {
+  color: #989ca1;
+}
+header {
+  background-color: var(--primary-color);
+  height: 100px;
+  padding-top: 20px;
+
+}
+header section {
+  float: left;
+  width: 20%;
+}
+header img {
+  padding-left: 100px;
+}
+header nav {
+  float: right;
+  width: 55%;
+  text-align: center;
+  padding-top: 20px;
+}
+header nav > * {
+  float: left;
+  width: 14.2857%;
+  list-style: none;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav li:last-child a {
+  background-color: var(--btn-color);
+  padding: 20px 35px;
+  border-radius: 10px;
+}
+
+/*******************************************/
+/*******************************************/
+main {
+  height: 700px;
+  background-color: var(--primary-color);
+  padding-top: 100px;
+}
+main section:first-child {
+  width: 50%;
+  float: left;
+  padding-right: 100px;
+  height: 425px;
+  padding-left: 100px;
+  margin-top: 140px;
+  font-size: larger;
+}
+main section:first-child > * {
+  color: white;
+}
+main section:first-child > a {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: smaller;
+}
+main section:first-child > a + a {
+  color: white;
+  background-color: var(--primary-color);
+}
+main section:first-child > p {
+  margin-bottom: 50px;
+}
+main section:first-child + section {
+  width: 50%;
+  float: right;
+}
+main section:first-child + section img {
+  width: 65%;
+  margin-left: 135px;
+}
+main section:last-child {
+  clear: right;
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 20%;
+}
+main section:last-child ul > * {
+  width: 14.2857%;
+  float: left;
+  list-style: none;
+}
+
+/*******************************************/
+/*******************************************/
+.basis {
+  height: 800px;
+  margin-top: 200px;
+}
+.basis > .text {
+  clear: right;
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 0 25px 0 130px;
+  font-size: larger;
+}
+.one > .text {
+  padding-top: 100px;
+}
+.basis > .text p {
+  font-size: 30px;
+  padding-right: 190px;
+  padding-bottom: 50px;
+}
+.basis > .text a {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 60px;
+  padding: 20px 50px;
+}
+.basis > .images {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+/*******************************************/
+/*******************************************/
+.one > .images section {
+  width:50%;
+  float: left;
+}
+.one > .images section > *{
+  width: 50%;
+  text-align: center;
+  margin-left: 20%;
+}
+/*******************************************/
+/*******************************************/
+.two > section{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.two > section img {
+  width: 67%;
+  height: 84%;
+  margin-left: 10%;
+  border-radius: 20px;
+}
+.two > .text{
+  float: left;
+  padding-left: 125px
+}
+/*******************************************/
+/*******************************************/
+.two + section {
+  font-size:x-large;
+  width: 100%;
+  text-align: center;
+  padding: 2% 15% 0 15%;
+}
+/*******************************************/
+/*******************************************/
+.three {
+  margin-top: 100px;
+}
+.three > section {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.three > section:first-child img {
+  width: 67%;
+  height: 84%;
+  margin-left: 10%;
+  border-radius: 20px;
+}
+.three .text {
+  float: left;
+  width: 50%;
+}
+.three .text > section {
+  margin-top: 70px;
+}
+.three .text > section > section:first-child {
+  width: 10%;
+  float: left;
+  height: 100%;
+}
+.three .text > section > section:first-child img {
+  margin-left: 0;
+}
+.three .text > section > section + section {
+  width: 90%;
+  float: left;
+  height: 100%;
+}
+.three .text > section > section + section h4, p {
+  margin: 0 auto;
+}
+.three .text > section:last-child > section {
+  margin-top: 80px;
+}
+.three .text > div {
+  width: 30%;
+}
+.three .text > div img {
+  margin-top: 80px;
+}
+.three article {
+  height: auto;
+  text-align: center;
+}
+.three article a{
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 80px;
+  margin-right: 200px;
+  padding: 25px 50px;
+}
+/*******************************************/
+/*******************************************/
+.four {
+  height: 1350px;
+  background-color: var(--primary-color);
+  padding-top: 100px;
+}
+.four > section:first-child{
+  font-size: x-large;
+  margin-left: 125px;
+}
+.four > section:first-child span,
+.four > section:first-child h3 {
+  color: white;
+}
+.four > section:last-child {
+  margin: 140px 0 0 127px;
+}
+.four > section:last-child > section {
+  background-color: white;
+  font-size: larger;
+  width: fit-content;
+  padding: 30px;
+  border-radius: 20px;
+  float: left;
+  margin-bottom: 80px;
+}
+.four > section:last-child > section:nth-child(odd) {
+  margin-right: 387px;
+}
+/*******************************************/
+.six {
+  height: 640px;
+  background-color: white;
+}
+.six > h5 {
+  font-size: 35px;
+}
+.six > h5 + section p {
+  font-size: 40px;
+}.six > section + section {
+  width: 35%;
+  margin: 0 auto;
+}
+.six > h5 + section > *,
+.six > section + section > *{
+  display: inline-block;
+}
+.six > h5 + section {
+  margin-bottom: 15%;
+}
+.six > h5 + section > * {
+  width: 80%;
+  float: left;
+  color: black;
+}
+.six > h5 + section > section {
+  width: 10%;
+}
+.six > h5 + section > section img {
+  width: 50%;
+}
+.six > section + section > * {
+  float: left;
+}
+.six > section + section img {
+  width: 17%;
+}
+.six > section + section h6 {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+.six > section + section p,
+.six > section + section h6 {
+  font-size: 30px;
+}
+.six > section + section div {
+  margin-left: 20px;
+}
+/*******************************************/
+.seven {
+  background-color: var(--primary-color);
+  height: 265px;
+}
+.seven > section{
+  width: 50%;
+  float: left;
+  height: 150px;
+  margin-top: 80px;
+  font-size: x-large;
+}
+.seven section span,
+.seven section h6 {
+  color: white;
+}
+.seven > section:first-child {
+  padding-left: 11%;
+}
+.seven > section:first-child h6 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.seven > section:last-child a {
+  background-color: var(--btn-color);
+  padding: 20px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  margin: 25px 0 0 30px;
+}
+.seven > section:last-child a + a {
+  background-color: white;
+  color: var(--primary-color);
+  margin-left: 150px;
+}
+/*******************************************/
+/*******************************************/
+footer {
+  height: 700px;
+  font-size: x-large;
+  padding: 100px 150px 0 125px;
+}
+footer > *{
+  width: 15%;
+  float: left;
+}
+.eight-1 {
+  padding-right: 20px;
+  margin-right: 80px;
+  width: 18%;
+}
+.eight-1 > p {
+  margin-bottom: 50px;
+}
+.eight-1 > section{
+  margin-bottom: 20px;
+}
+.eight-1 > section img,
+.eight-1 > section span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.eight-1 > section img {
+  margin-right: 20px;
+}
+.eight-2 span,
+.eight-3 span,
+.eight-4 span,
+.eight-5 span,
+.eight-6 span{
+  display: block;
+  margin-bottom: 25px;
+}
+.eight-3 {
+  margin-top: 3.9%;
+}
+.eight-6 section {
+  margin-top: 40px;
+}
+/*******************************************/
+/*******************************************/
+@media (max-width: 1440px) {
+  header nav > * {
+    width: 13.2857%;
+  }
+  header nav li:last-child a {
+    padding: 20px 10px;
+  }
+  main {
+    padding-top: 85px;
+    height: 600px;
+  }
+  main > section:first-child{
+    margin-top: 0;
+  }
+  main section:first-child > a {
+    font-size: x-small;
+  }
+  main section:first-child + section img {
+    height: 425px;
+    width: 82%;
+  }
+/*******************************************/
+  .basis {
+    margin-top: 100px;
+  }
+  .basis > .text {
+    padding: 0 25px 0 100px;
+  }
+  .basis > .text p,
+  .one > .images p{
+    font-size: 23px;
+  }
+  .basis > .text a {
+    margin-top: 10px;
+  }
+  .one > .text {
+    padding-top: 100px;
+  }
+  .one > .text p,
+  .two >.text p,
+  .three > .text p{
+    padding-right: 82px;
+  }
+  .one > .images p {
+    width: 90%;
+    margin-left: 0;
+  }
+  .one > .images > :not(section:nth-child(3)) h4{
+    text-wrap: nowrap;
+    margin-left: 10%;
+  }
+  .one > .images > section:nth-child(2) h4 {
+    margin-left: 18.5%;
+  }
+  .one > .images {
+    padding-top: 7%;
+  }
+  .one > .images > section:nth-child(1),
+  .one > .images > section:nth-child(2) {
+    margin-bottom: 11%;
+  }
+/*******************************************/
+  .two {
+    height: 735px;
+  }
+  .two > section:first-child,
+  .three > section:first-child {
+    height: 83%;
+  }
+  .two > section img,
+  .three > section:first-child img {
+    width: 77.5%;
+    height: 100%;
+    margin-left: 13.5%;
+  }
+  .two + section {
+    font-size: large;
+    padding: 2% 10% 2% 10%;
+  }
+  .three .text > section {
+    margin-top: 20px;
+  }
+  .three .text > div img {
+    margin-top: 0px;
+  }
+  .three article a {
+    margin-top: 80px;
+    margin-right: 0px;
+  }
+/*******************************************/
+  .four {
+    height: 1200px;
+    padding-top: 40px;
+  }
+  .four > section:first-child{
+    font-size: medium;
+    margin-left: 95px;
+    padding-top: 70px;
+  }
+  .four > section:last-child {
+    margin: 110px 0 0 95px;
+  }
+  .four > section:last-child > section:nth-child(odd) {
+    margin-right: 185px;
+  }
+  .four > section:last-child > section {
+    font-size: medium;
+    width: 40%;
+    margin-bottom: 85px;
+    padding: 60px 40px;
+  }
+  .four > section:last-child section > *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .four > section:last-child section > p {
+    padding-left: 11.1%;
+  }
+  .four > section:last-child section > h4 {
+    margin: 0;
+  }
+  .four > section:last-child section > h4, 
+  .four > section:last-child section > p {
+    margin-left: 15px;
+  }
+/*********************************************/
+.six {
+  height: 490px;
+}
+.six > h5 + section p {
+    font-size: 25px;
+}
+.six > section + section {
+    margin: 0 auto;
+    height: 25%;
+    padding-top: 25px;
+}
+.six > section + section p, .six > section + section h6 {
+    font-size: 25px;
+}
+.six > section + section h6 {
+    margin-top: 5px;
+}
+/*******************************************/
+  .seven > section:first-child span {
+    font-size: small;
+  }
+  .seven > section:last-child a{
+    font-size: 13px;
+  }
+  .seven > section:first-child h6 {
+    font-size: 30px;
+  }
+  .seven > section:first-child span,
+  .seven > section:first-child h6 {
+    color: white;
+  }
+
+/*******************************************/
+  footer {
+    padding: 75px 0 0 95px;
+    font-size: medium;
+  }
+  footer > * {
+    width: 10%;
+    margin-right: 45px;
+  }
+  .eight-1 {
+    padding-right: 30px;
+    width: 27%;
+    margin-right: 5px;
+  }
+  .eight-1 > section img {
+    width: 10%;
+    margin-right: 5px;
+  }
+  .eight-6 > section img {
+    width: 20%;
+  }
+  .eight-1 > p {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+  .eight-6 section {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .basis {
+    margin-top: 30px;
+    height: 550px;
+  }
+  .basis > .text {
+    padding: 70px 25px 0 28px;
+    font-size: smaller;
+  }
+  .basis > .text p {
+    font-size: 15px;
+    padding-right: 25px;
+    padding-bottom: 35px;
+  }
+  .basis > .text a {
+    padding: 15px 30px;
+    font-size: smaller;
+  }
+  header img {
+    padding-left: 25px;
+  }
+  header nav {
+    width: 80%;
+  }
+  header nav a {
+    font-size: small;
+  }
+  header nav li:last-child a {
+    padding: 15px;
+  }
+  main {
+    padding-top: 100px;
+    height: 470px;
+  }
+  main section:first-child {
+    padding-right: 42px;
+    height: 310px;
+    padding-left: 30px;
+    margin-top: 0;
+    font-size: medium;
+  }
+  main section:first-child + section img {
+    width: 90%;
+    margin-left: 51px;
+    height: 310px;
+  }
+  main section:last-child {
+    padding-top: 50px;
+    padding-left: 0%;
+  }
+  main section:last-child li img {
+    height: 40px;
+  }
+  .one > .images > :not(section:nth-child(3)) h4 {
+    margin-left: 16%;
+  }
+  .one > .images > section:nth-child(2) h4 {
+    margin-left: 20%;
+  }
+  .one > .images > section h4 {
+    font-size: xx-small;
+  }
+  .one > .images > section p{
+    font-size: 14px;
+  }
+  .two > section img,
+  .three > section:first-child img {
+    height: 92%;
+    margin-top: 14%;
+    margin-left: 5.5%;
+    width: 81%;
+  }
+  .two + section > h3 {
+    margin-top: 0;
+  }
+  .two + section {
+    margin-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  .two + section > *{
+    font-size: smaller
+  }
+  .three {
+    margin-top: 0;
+  }
+  .three > .text > section img{
+    height: 25px;
+    width: 25px;
+  }
+  .three > .text div img{
+    height: 35px;
+    width: 90px;
+  }
+  .three article a
+  {
+    display: inline-block;
+    margin-top: 13px;
+    margin-right: 0px;
+    padding: 15px 30px;
+    font-size: x-small;
+  }
+  .four {
+    height: 700px;
+    margin-top: 75px;
+  }
+  .four > section:first-child {
+    font-size: x-small;
+    margin-left: 67px;
+    margin-top: 10px;
+    padding-top: 0px;
+  }
+  .four > section:last-child {
+    margin: 45px 0 0 67px;
+  }
+  .four > section:last-child > section {
+    font-size: x-small;
+    width: 45%;
+    margin-bottom: 40px;
+    padding: 35px 20px;
+  }
+  .four > section:last-child > section:nth-child(odd) {
+    margin-right: 35px;
+  }
+  .four > section:last-child section > img{
+    width: 35px;
+    height: 35px;
+  }
+  .five {
+    height: 500px;
+  }
+  .five section:first-child img{
+    height: 88%;
+  }
+  .six {
+    height: 345px;
+  }
+  .six > h5 + section p {
+    font-size: 20px;
+  }
+  .six > section + section p,
+  .six > section + section  h6 {
+    font-size: 15px;
+  }
+  .six > section + section {
+    margin: 0 auto;
+    height: 25%;
+    padding-top: 22px;
+  }
+  .seven {
+    height: 220px;
+  }
+  .seven > section {
+    width: 50%;
+    float: left;
+    height: 120px;
+    margin-top: 6%;
+  }
+  .seven > section:first-child {
+    padding-left: 7.5%;
+  }
+  .seven > section:first-child span {
+    font-size: x-small;
+  }
+  .seven > section:first-child h6 {
+    font-size: 25px;
+  }
+  .seven > section:last-child a{
+    padding: 15px 30px;
+    font-size: xx-small;
+    width: 33%;
+  }
+  .seven > section:last-child a + a {
+    margin-left: 50px;
+  }
+  footer {
+    padding: 40px 0 0 75px;
+    font-size: x-small;
+    height: 435px;
+  }
+  .eight-1 > p {
+    margin-bottom: 31px;
+    font-size: 14px;
+  }
+  .eight-1 {
+    padding-right: 0px;
+    width: 23%;
+    margin-right: 25px;
+  }
+  .eight-3 {
+    margin-top: 6.1%;
+  }
+  .eight-6 > span:nth-child(4){
+    margin-bottom: 13px;
+  }
+}
+@media (max-width:768px) {
+  header {
+    height: 85px;
+  }
+  header > section:first-child img{
+    height: 40px;
+    width: 65px;
+  }
+  header nav {
+    padding-top: 10px;
+  }
+  header nav a {
+      font-size: xx-small;
+  }
+  header nav li:last-child a {
+    padding: 10px 15px;
+  }
+  main {
+    padding-top: 40px;
+    height: 410px;
+  }
+  main section:first-child {
+    font-size: small;
+    padding-right: 0;
+  }
+  main section:first-child > a {
+    padding: 10px;
+    font-size: xx-small;
+  }
+  .basis {
+    margin-top: 25px;
+    height: 435px;
+  }
+  .basis > .text {
+    padding: 53px 25px 0 28px;
+    font-size: xx-small;
+  }
+  .basis > .text p {
+    font-size: 12px;
+    padding-right: 20px;
+    padding-bottom: 32px;
+  }
+  .basis > .text a {
+    padding: 10px 20px;
+    font-size: smaller;
+  }
+  .one > .images > :not(section:nth-child(3)) h4 {
+    margin-left: 6.5%;
+  }
+  .one > .images > section p {
+    font-size: 11px;
+  }
+  .two + section {
+    font-size: small;
+  }
+  .three {
+    margin-top: 5px;
+  }
+  .three .text > section {
+      margin-top: 10px;
+  }
+  .three > .text > section img {
+    height: 20px;
+    width: 20px;
+  }
+  .three > .text > section > section:last-child > * {
+    font-size: smaller;
+  }
+  .three > .text div img {
+    height: 20px;
+    width: 50px;
+  }
+  .three article a {
+    margin-top: 0px;
+    padding: 10px 20px;
+    font-size: xx-small;
+  }
+  .four {
+    height: 550px;
+    margin-top: 50px;
+  }
+  .four > section:first-child {
+    font-size: xx-small;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .four > section:last-child {
+    margin: 50px 0 0 25px;
+  }
+  .four > section:last-child > section {
+    margin-bottom: 25px;
+    padding: 30px 20px;
+  }
+  .four > section:last-child section > img {
+    width: 25px;
+    height: 25px;
+  }
+  .four > section:last-child section > h4, .four > section:last-child section > p {
+    margin-left: 8px;
+    font-size: xx-small;
+  }
+  .six {
+    height: 225px;
+  }
+  .six > h5 + section p {
+    font-size: 13px;
+  }
+  .six > section + section {
+    height: 25%;
+    padding-top: 12px;
+    height: 35%;
+  }
+  .six > section + section h6 {
+    margin-top: 3px;
+  }
+  .six > section + section p, .six > section + section h6 {
+    font-size: 10px;
+  }
+  .seven {
+    height: 150px;
+  }
+  .seven section {
+    height: 85px;
+    margin-top: 5%;
+  }
+  .seven > section:last-child a {
+    padding: 10px 20px;
+    font-size: 9px;
+  }
+  .seven > section:first-child span {
+    font-size: xx-small;
+  }
+  .seven > section:first-child h6 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  footer {
+    padding: 40px 0 0 50px;
+    font-size: xx-small;
+    height: 400px;
+  }
+  footer > * {
+    margin-right: 32px;
+  }
+  .eight-1 > p {
+    margin-bottom: 35px;
+    font-size: 9px;
+  }
+  .eight-1 > section img {
+    width: 8%;
+    margin-right: 2px;
+  }
+  .eight-3 {
+    margin-top: 6.52%;
+  }
+  .eight-6 span:nth-child(4){
+    margin-bottom: 18px;   
+  }
+}
+@media (max-width: 426px) {
+  header{
+    height: 65px;
+  }
+  header > section:first-child img {
+    height: 30px;
+    width: 40px;
+  }
+  header img {
+    padding-left: 10px;
+  }
+  header nav {
+    padding-top: 1px;
+  }
+  header nav > * {
+    width: 14%;
+  }
+  header nav a {
+    font-size: 6px;
+  }
+  header nav li:last-child a {
+    padding: 7px 9px;
+  }
+  main {
+    padding-top: 20px;
+    height: 275px;
+  }
+  main section:first-child + section {
+    height: 100%;
+  }
+  main section:first-child {
+    font-size: xx-small;
+    padding-left: 13px;
+    height: 85%;
+  }
+  main section:first-child > a {
+    padding: 7px;
+    font-size: 7px;
+  }
+  main section:first-child + section img {
+    margin-left: 21px;
+    height: 85%;
+  }
+  main section:first-child > p {
+    margin-bottom: 25px;
+  }
+  main section:last-child {
+    padding-top: 1px;
+  }
+  main section:last-child li img {
+    height: 17px;
+  }
+  main section:last-child ul > * {
+    width: 14%;
+    margin-right: -3px;
+  }
+  .basis {
+    margin-top: 25px;
+    height: 260px;
+  }
+  .basis > .text {
+    padding: 30px 13px 0 13px;
+    font-size: xx-small;
+  }
+  .basis > .text > span {
+    font-size: 7px;
+  }
+  .basis > .text > h2 {
+    font-size: 12px;
+  }
+  .basis > .text > p {
+    font-size: 7px;
+    padding-bottom: 20px;
+  }
+  .basis > .text a {
+    padding: 7px 11px;
+    font-size: 6px;
+    margin-top: 0;
+  }
+  .one > .images {
+    padding-top: 13%;
+  }
+  .one > .images > section h4 {
+    font-size: 6px;
+  }
+  .one > .images > section p {
+    font-size: 6px;
+  }
+  .one > .images > section:nth-child(1),
+  .one > .images > section:nth-child(2) {
+    margin-bottom: 8%;
+  }
+  .two > section img, .three > section:first-child img {
+    margin-left: 6.5%;
+  }
+  .two + section {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .two + section h3{
+    font-size: 9px;
+  }
+  .two + section p{
+    font-size: 7px;
+  }
+  .three > .text > section img {
+    height: 10px;
+    width: 10px;
+  }
+  .two > section:first-child, .three > section:first-child {
+      height: 100%;
+  }    
+  .two > section img, .three > section:first-child img {
+    height: 85%;
+  }
+  .three {
+    margin-top: 0;
+  }
+  .three > .text > section > section:last-child > h4 {
+    font-size: 8px;
+  }
+  .three > .text > section > section:last-child > p {
+    font-size: 7px;
+  }
+  .three > .text p {
+    padding-bottom: 10px;
+  }
+  .three > .text div img {
+    height: 12px;
+    width: 26px;
+  }
+  .three article a {
+    padding: 7px 11px;
+    font-size: 6px;
+    margin-top: 0;
+  }
+  .four {
+    height: 280px;
+    padding-top: 15px;
+    margin-top: 35px;
+  }
+  .four > section:first-child {
+    font-size: 7px;
+    margin-left: 13px;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .four > section:last-child {
+    margin: 20px 0 0 13px;
+  }
+  .four > section:last-child section > img {
+    width: 12px;
+    height: 12px;
+  }
+  .four > section:last-child section > h4{
+    margin-left: 3px;
+    font-size: 7px;
+  }
+  .four > section:last-child section > p {
+    margin-left: 7px;
+    font-size: 6px;
+  }
+  .four > section:last-child > section {
+    margin-bottom: 15px;
+    padding: 10px 10px;
+  }
+  .four > section:last-child > section:nth-child(odd) {
+    margin-right: 18px;
+  }
+  .five section:first-child img {
+    height: 81%;
+  }
+  .six {
+    height: 135px;
+  }
+  .six > h5 {
+    font-size: 7px;
+  }
+  .six > h5 + section p {
+    font-size: 8px;
+  }
+  .six > section + section h6 {
+    margin-top: 1px;
+  }
+  .six > section + section p, .six > section + section h6 {
+    font-size: 5px;
+  }
+  .six > section + section div {
+    margin-left: 10px;
+  }
+  .six > section + section {
+    height: 60px;
+    padding-top: 15px;
+  }
+  .seven {
+    height: 80px;
+  }
+  .seven section {
+    height: 60px;
+    margin-top: 2%;
+  }
+  .seven > section:first-child {
+    padding-left: 3%;
+  }
+  .seven > section:first-child span {
+    font-size: 7px;
+  }
+  .seven > section:first-child h6 {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .seven > section:last-child a {
+    padding: 7px 11px;
+    font-size: 5px;
+    margin-top: 20px;
+  }
+  .seven > section:last-child a:last-child {
+    margin: 25px 0 0 10px;
+  }
+  footer {
+    padding: 25px 0 0 13px;
+    font-size: 6px;
+    height: 245px;
+  }
+  footer > * {
+    width: 11%;
+    margin-right: 13px;
+  }
+  footer h5 {
+    font-size: 7px;
+  }
+  .eight-1 {
+    width: 25%;
+    margin-right: 10px;
+  }
+  .eight-1 > p {
+    margin-bottom: 15px;
+    font-size: 5px;
+  }
+  .eight-2 span,
+  .eight-3 span, 
+  .eight-4 span, 
+  .eight-5 span, 
+  .eight-6 span {
+    margin-bottom: 21px;
+  }
+  .eight-3{
+    margin-top: 7%;
+  }
+  .eight-6 > section img {
+    width: 20%;
+    margin-top: -3px;
+  }
+}
+@media (max-width: 376px) {
+  header {
+    height: 60px;
+    padding-top: 10px;
+  }
+  header > section:first-child img {
+    height: 25px;
+    width: 35px;
+  }
+  header nav {
+    padding-top: 0px;
+  }
+  header nav > * {
+    width: 13%;
+  }
+  header nav li:last-child a {
+    padding: 5px 6px;
+  }
+  main {
+    padding-top: 20px;
+    height: 200px;
+  }
+  main section:first-child > h1 {
+    font-size: 12px;
+  }
+  main section:first-child > p {
+    font-size: 8px;
+    margin-bottom: 30px;
+  }
+  main section:first-child > a {
+    font-size: 5px;
+  }
+  main section:first-child,
+  main section:nth-child(2) {
+    height: 155px;
+  }
+  main section:first-child + section img {
+    margin-left: 18px;
+    height: 85%;
+  }
+  main section:last-child ul > * {
+    margin-right: -5px;
+  }
+  main section:last-child ul {
+  margin-top: 15px;
+  }
+  .basis {
+    margin-top: 20px;
+    height: 225px;
+  }
+  .basis > .text > span {
+    font-size: 6px;
+  }
+  .basis > .text > h2 {
+    font-size: 9px;
+  }
+  .basis > .text > p {
+    font-size: 6px;
+    padding-bottom: 19px;
+  }
+  .basis > .text a {
+    padding: 7px 10px;
+    font-size: 5px;
+    margin-top: 0;
+  }
+  .one > .images > :not(section:nth-child(3)) h4 {
+    margin-left: 13%;
+  }
+  .one > .images > section h4 {
+    font-size: 5px;
+  }
+  .one > .images > section p {
+    font-size: 5px;
+  }
+  .one > .images {
+    padding-top: 10%;
+  }
+  .one > .images > :not(section:nth-child(3)) h4 {
+    margin-left: 13%;
+    margin-top: 3px;
+  }
+  .one > .images > section:nth-child(1), .one > .images > section:nth-child(2) {
+    margin-bottom: 13%;
+  }
+  .three > .text > section img {
+    height: 7px;
+    width: 7px;
+  }
+  .three > .text > section > section:last-child > h4 {
+    font-size: 7px;
+    padding-top: 3px;
+  }
+  .three > .text > section > section:last-child > p {
+    font-size: 6px;
+    margin-top: 2px;
+  }
+  .three article a {
+    font-size: 5px;
+    margin-top: 24px;
+  }
+  .four {
+    height: 235px;
+    padding-top: 5px;
+    margin-top: 50px;
+  }
+  .four > section:first-child {
+    font-size: 5px;
+    padding-top: 10px;
+  }
+  .four > section:last-child section > img {
+    width: 7px;
+    height: 7px;
+  }
+  .four > section:last-child section > h4 {
+    font-size: 6px;
+  }
+  .four > section:last-child section > p {
+    margin-left: -1px;
+    font-size: 5px;
+    margin-top: -8px;
+  }
+  .four > section:last-child > section {
+    margin-bottom: 15px;
+    padding: 6px 10px;
+  }
+  .five {
+  height: 210px;
+  }
+  .five > .text {
+    padding: 24px 13px 0 13px;
+    font-size: xx-small;
+  }
+  .five > .text > p {
+    padding-bottom: 18px;
+  }
+  .six {
+    height: 115px;
+  }
+  .six > section + section p, .six > section + section h6 {
+    font-size: 6px;
+  }
+  .six > h5 {
+    font-size: 6px;
+  }
+  .six > h5 + section p {
+    font-size: 6px;
+  }
+  .six > section + section img {
+  width: 23%;
+  }    
+  .six > section + section {
+    height: 35%;
+    padding-top: 5px;
+  }
+  .six > section + section div {
+    margin-left: 5px;
+  }
+  .seven {
+    height: 75px;
+  }
+  .seven section {
+    margin-top: 2%;
+  }
+  .seven > section:first-child span {
+    font-size: 5px;
+  }
+  .seven > section:first-child h6 {
+    font-size: 9px;
+  }
+  .seven > section:last-child a {
+    font-size: 4px;
+  }
+  footer {
+  height: 425px;
+  }
+  footer > * {
+    margin-right: 14px;
+  }
+  .eight-1 {
+    width: 30%;
+    margin-right: 25px;
+  }
+  .eight-2, .eight-3{
+  width: 25%;
+  }
+  .eight-3 {
+  margin-top: 9%;
+  }
+  .eight-1 > p {
+    font-size: 6px;
+  }
+  .eight-4 {
+  clear: left;
+  }
+  .eight-5 {
+  margin-left: 28px;
+  }
+  .eight-4,
+  .eight-5,
+  .eight-6{
+  width: 25%;
+  }
+  .eight-6 > section img {
+    width: 15%;
+    margin-top: -9px;
+  }
+}

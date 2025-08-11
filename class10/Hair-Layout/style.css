@@ -1,0 +1,512 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+:root {
+     --a-bg: black;
+     --a: white;
+}
+body > *{
+     width: 100%;
+}
+ul {
+     list-style: none;
+}
+a {
+     text-decoration: none;
+     font-size: 25px;
+}
+body a:not(header a) {
+     background-color: var(--a-bg);
+     color: white;
+     padding: 10px 20px;
+}
+header {
+     background-color: rgb(180, 255, 255);
+     height: 4vh;
+     padding-bottom: 6vh;
+}
+header nav{
+     background-color: rgb(99, 255, 255);
+     width: 100%;
+}
+header nav > * {
+     background-color: rgb(200, 255, 255);
+     float: left;
+     width: 20%;
+}
+header img {
+     width: 10%;
+}
+header ul + img,
+header img + img {
+     width: 5%;
+     height: 4vh;
+}
+nav > ul {
+     width: 60%;
+}
+nav > ul,
+nav > a {
+     margin-top: 1%;
+     margin-bottom: 0;
+     padding-right: 0;
+}
+nav > a {
+     padding-left: 7%;
+}
+nav > ul > * {
+     float: left;
+     width: 16.6667%;
+     list-style: none;
+}
+/********************************************/
+.hero {
+     clear: left;
+     background-color: rgb(255, 250, 99);
+     height: 50vh;
+}
+.hero h1 {
+     margin-top: 0px;
+     margin-bottom: 10px;
+     font-size: 70px;
+     font-weight: lighter;
+}
+.hero div:first-child {
+     background-color: rgb(251, 255, 189);
+}
+.hero div {
+     display: inline-block;
+     float: left;
+     height: 50%;
+     width: 50%;
+}
+.hero div:first-child p {
+     font-size: 15px;
+     padding-bottom: 20px;
+}
+.hero div:nth-child(2) {
+     writing-mode: vertical-lr;
+}
+.hero div:nth-child(2) p {
+     margin-left: 45vw;
+     padding-top: 15px;
+}
+.hero div:nth-child(3){
+     background-color: pink;
+}
+.hero div:nth-child(3) > *:not(a) {
+     display: block;
+     width: 100%;
+     padding-bottom: 4%;
+}
+.hero div:nth-child(3) > span + span {
+     display: inline-block;
+     padding-right: 32vw;
+}
+.hero div:nth-child(3) > span + span > span,
+.four h4 > span{
+     font-weight: bold;
+     font-size: 40px;
+}
+.hero div:nth-child(4) {
+     background-color: rgb(138, 255, 122);
+}
+.hero div:nth-child(4) img {
+     padding-top: 10vh;
+     padding-left: 35vw;
+}
+/****************************************/
+.one {
+     background-color: rgb(255, 81, 81);
+     height: 30vh;
+}
+.one ul{
+     margin-top: 0;
+     margin-bottom: 0px;
+     padding: 5vh;
+}
+.one ul li{
+     width: 33.3333%;
+     float: left;
+     text-align: center;
+     padding: 0 5%;
+}
+/****************************************/
+.two {
+     clear: left;
+     height: 35vh;
+     background-color: rgb(196, 197, 202);
+}
+.two > * {
+     float: left;
+     width: 50%;
+     padding-top: 4vh;
+     padding-bottom: 4vh;
+}
+.two div:first-child {
+     padding-left: 4.5vw;
+}
+.two div:first-child p {
+     line-height: 43px;
+     font-size: 30px;
+}
+.two div:last-child {
+     padding-left: 10vw;
+}
+.two div:last-child img {
+     width: 30vw;
+     height: 100%;
+}
+/***************************************/
+.three {
+     background-color: rgb(181, 138, 255);
+     height: 45vh;
+}
+.three ul {
+     margin: 0 auto;
+}
+.three li {
+     float: left;
+     width: 33.3333%;
+     text-align: center;
+}
+.three li img,
+.three div {
+     width: 15vw;
+}
+.three div {
+     background-color: black;
+     color: white;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin-left: 27%;
+}
+.three ul li {
+     margin-top: 3%;
+}
+/*********************************/
+.four {
+     clear: left;
+     height: 35vh;
+     background-color: rgb(190, 255, 59);
+     padding-top: 6%;
+}
+.four > * {
+     margin-left: 13%;
+}
+.four h4 {
+     margin-top: 0px;
+     margin-bottom: 2%;
+}
+.four h4 + h4 {
+     font-size: 35px;
+     padding-right: 55%;
+}
+/***********************************/
+.five {
+     height: 75vh;
+     background-color: rgb(253, 215, 255);
+     padding-left: 20%;
+}
+.five > *:not(h5) {
+     width: 33.3333%;
+     float: left;
+}
+.five .five-1 div {
+     padding-left: 50%;
+}
+.five .five-3 div {
+     margin-left: -50%;
+}
+.five div:first-child {
+     padding-bottom: 3%;
+}
+.five h5 {
+     font-size: 35px;
+     padding-left: 30%;
+     padding-top: 2%;
+     margin-top: 0;
+}
+/*************************************/
+@media (max-width:1440px) {
+     header {
+          height: 7vh;
+     }
+     a {
+          font-size: 15px;
+     }
+     .one {
+          background-color: rgb(255, 81, 81);
+          height: 46vh;
+     }
+     .one ul li {
+          padding: 0 2%;
+     }
+     .two {
+          height: 45vh;
+     }
+     .two div:first-child p {
+          line-height: 30px;
+          font-size: 20px;
+     }
+     .three,
+     .four {
+          height: 55vh;
+     }
+     .five {
+          height: 100vh;
+     }
+     .five h5 {
+          padding-left: 28%;
+     }
+     .five .five-1 div {
+          padding-left: 40%;
+     }
+     .five .five-3 div {
+          margin-left: -40%;
+     }
+}
+@media (max-width:1025px) {
+     header ul + img, header img + img {
+    height: 6vh;
+}
+    header {
+        height: 6vh;
+    }
+.hero {
+     height: 85vh;
+}
+.hero h1
+ {
+    font-size: 35px;
+ }
+ 
+.hero div:nth-child(4) img {
+    padding-top: 20vh;
+}
+.one {
+     height: 52vh;
+}
+.two {
+     height: 50vh;
+}
+.two div:first-child h2{
+    font-size: 25px;
+}
+    .two div:first-child p {
+        line-height: 30px;
+        font-size: 16px;
+    }
+.two div:last-child {
+    height: 90%;
+}
+.three li img, .three div {
+    width: 25vw;
+}
+.three div {
+    padding-top: 1px;
+    padding-bottom: 25px;
+    margin-left: 10%;
+    font-size: small;
+}
+    .three {
+        height: 67vh;
+    }
+.four {
+     height: 50vh;
+}
+.four h4 + h4
+ {
+    font-size: 30px;
+    padding-right: 50%;
+}
+.five{
+     height: 115vh;
+     padding-left: 15%;
+}
+    .five h5 {
+        padding-left: 30%;
+        font-size: 25px;
+    }
+    .five .five-1 div {
+        padding-left: 20%;
+    }
+        .five .five-3 div {
+        margin-left: -20%;
+    }
+}
+@media (max-width: 320px) {
+
+a {
+     font-size: 11px;
+}
+a:not(header a) {
+     font-size: 9px;
+     padding: 10px;
+}
+header {
+     height: 15vh;
+}
+header img {
+     width: 20%;
+}
+header nav > * {
+     width: 20%;
+}
+header ul + img, header img + img {
+     height: 5vh;
+     width: 10%;
+}
+nav > ul {
+     padding-left: 0;
+     width: 60%;
+}
+nav > ul > * {
+     width: 49.6667%;
+}
+nav > a {
+     padding-left: 0%;
+     width: 100%;
+     text-align: center;
+}
+nav > ul, nav > a {
+     margin-top: 0%;
+     margin-bottom: 0;
+     padding-right: 0;
+     text-align: center;
+}
+.hero {
+     height: 90vh;
+}
+.hero h1 {
+     font-size: 25px;
+}
+.hero div:first-child p {
+     font-size: 9px;
+     padding-bottom: 9px;
+}
+.hero div:nth-child(2) p {
+     margin-left: 35vw;
+     font-size: x-small;
+}
+.hero div:nth-child(3) span:first-child {
+     font-size: x-small;
+}
+.hero div:nth-child(3) > span + span {
+     padding-right: 8vw;
+     font-size: xx-small;
+}
+.hero div:nth-child(4) img {
+     padding-top: 13.5vh;
+     width: 60px;
+     margin-left: 21vw;
+     padding-left: 0;
+}
+.one {
+     height: 160vh;
+}
+.one ul li {
+     padding: 15px 0 0 0;
+     width: 100%;
+     float: none;
+}
+.one ul li > * {
+     font-size: x-small;
+}
+.two {
+     height: 45vh;
+}
+.two div:first-child h2 {
+     font-size: 8px;
+}
+.two div:first-child p {
+     line-height: 16px;
+     font-size: 8px;
+}
+.two div:last-child {
+     height: 96%;
+     padding-left: 3vw;
+}
+.two div:last-child img {
+     width: 44vw;
+     height: 100%;
+}
+.three {
+     height: 145vh;
+     padding-top: 6%;
+}
+.three ul {
+     margin: 0 15%;
+}
+.three ul li {
+     margin-top: 0;
+     float: none;
+     margin-bottom: 10%;
+}
+.three li img, .three div {
+     width: 41vw;
+}
+.three div {
+     padding-top: 1px;
+     padding-bottom: 15px;
+     margin-left: 0%;
+     font-size: xx-small;
+}
+.four {
+     height: 30vh;
+}
+.four * {
+     font-size: xx-small;
+     text-align: center;
+}
+.four h4:first-child {
+     margin-left: 0;
+}
+.four h4 + h4 {
+     font-size: 12px;
+     padding-bottom: 5%;
+     margin-left: 0;
+     padding-left: 5%;
+     padding-right: 5%;
+}
+.four h4 > span {
+     font-size: 29px;
+}
+.four > a{
+     margin-left: 22%;
+}
+.five {
+     padding: 0 22%;
+     height: 350vh;
+}
+.five h5 {
+     padding-left: 9%;
+     font-size: 15px;
+}
+.five *:not(h5) {
+     float: none;
+     width: 50vw;
+}
+.five .five-1 div {
+     padding-left: 0;
+}
+.five .five-3 div {
+     margin-left: -0;
+}
+}

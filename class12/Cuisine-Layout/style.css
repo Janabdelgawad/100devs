@@ -1,0 +1,341 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  width: 100%;
+  height: 100%;
+}
+body > * {
+  width: 100%;
+  font-size: x-large;
+  padding: 5%;
+}
+body * {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(170, 170, 255);
+  padding-top: 0;
+}
+nav img{
+  width: 7%;
+  height: 100px;
+}
+nav > * {
+  float: left;
+}
+nav > ul {
+  width: 79%;
+  height: 100px;
+  background-color: pink;
+  margin: 0;
+    padding-left: 12%;
+    padding-top: 1%;
+}
+nav ul li{
+  float: left;
+  background-color: rgb(199, 255, 236);
+  margin-right: 5%;
+  font-size: 45px;
+}
+/******************************************/
+.main, 
+.one,
+.two{
+  height: 35vh;
+  padding-top: 60px;
+}
+.main {
+  clear: both;
+  background-color: rgb(83, 143, 255);
+  margin-top: -7%;
+  padding-top: 3%;
+}
+.main h1 {
+  background-color: aliceblue;
+  width: 50%;
+  padding-right: 80px;
+  height: 35%;
+  font-size: 100px;
+}
+.main input {
+  width: 35%;
+  padding: 35px;
+  font-size: 25px;
+}
+.main form > a {
+  color: white;
+  padding: 15px 80px 34px 80px;
+  border-radius: 2px;
+  margin: 0;
+  background-color: rgb(255, 141, 27);
+  width: 10%;
+  font-size: 50px;
+}
+.main form + ul {
+  background-color: rgb(185, 184, 184);
+  width: 50%;
+  padding-left: 0;
+  margin-top: 4%;
+}
+.main form + ul li {
+  margin-right: 10%;
+}
+.main form + ul li a {
+  font-size: 60px;
+}
+.main form + ul > * {
+  float: left;
+}
+.main form + ul img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+/******************************************/
+.one {
+  background-color: rgb(139, 180, 255);
+  padding-left: 40%;
+}
+.one > * {
+  background-color: beige;
+  width: 80%;
+
+}
+.one span {
+  font-size: 50px;
+}
+.one h2 {
+  font-size: 80px;
+}
+.one p {
+  font-size: 45px;
+}
+.one a {
+    color: white;
+    padding: 15px 80px 34px 80px;
+    border-radius: 2px;
+    margin: 0;
+    background-color: rgb(255, 141, 27);
+    width: 10%;
+    font-size: 50px;
+}
+/******************************************/
+.two {
+  background-color: rgb(197, 255, 131);
+}
+.two > span{
+  display: block;
+  font-size: 45px;
+}
+.two h3 {
+  font-size: 65px;
+  margin-top: 25px;
+}
+.two  *{
+  text-align: center;
+}
+.two h3 + ul {
+    background-color: rgb(132, 255, 255);
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+}
+.two h3 + ul  > *{
+  float: left;
+  padding-right: 11%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.two h3 + ul  > li:first-child {
+  border-bottom: 1px solid gold;
+}
+.two ul + ul {
+  clear: left;
+  margin-left: 5%;
+}
+.two ul img {
+  width: 20%;
+  float: left;
+  margin-right: 70px;
+}
+/******************************************/
+.three {
+  background-color: rgb(215, 172, 255);
+  padding-left: 24%;
+}
+.three > *{
+  width: 70%;
+  display: block;
+  text-align: center;
+}
+.three span
+{
+  font-size: 45px;
+}
+.three h4 {
+  font-size: 75px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.three h4 + section > *{  
+  display: block;
+}
+.three h4 + section > img {
+  margin-left: 45%;
+  width: 10%;
+  margin-bottom: 5%;
+}
+.three h4 + section > span + span {
+  font-size: 60px;
+  margin-top: 1%;
+}
+.three section + section {
+  background-color: rgb(105, 198, 255);
+  display: inline-block;
+  width: 34.8%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.three section + section span:first-child {
+  display: block;
+  margin-bottom: 1%;
+}
+/******************************************/
+.four {
+  text-align: center;
+}
+.four > span:first-child {
+  color: rgb(255, 155, 14);
+  font-size: 45px;
+}
+.four > h5 {
+  font-size: 75px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.four h6 {
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.four > span + img{
+  display: block;
+  margin: 20px auto 0 auto;
+}
+.four p {
+  font-size: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+/******************************************/
+@media (max-width: 2561px) {
+  .main, .one, .two {
+    height: 60vh;
+  }
+}
+@media (max-width: 1441px) {
+  body * {
+    font-size: small;
+  }
+  .main, .one{
+    height: 152vh;
+  }
+  .two {
+    height: 80vh;
+  }
+  .two ul img {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 1025px){
+  .main, .one {
+      height: 80vh;
+  }
+  .main h1 {
+    background-color: aliceblue;
+    width: 50%;
+    height: 45%;
+    font-size: 53px;
+}
+.main form > a {
+    padding: 15px 30px;
+    font-size: 20px;
+}
+.main input {
+    width: 35%;
+    padding: 13px;
+    font-size: 20px;
+}
+.main form + ul img {
+    width: 40px;
+    height: 40px;
+}
+.main form + ul li a {
+    font-size: 25px;
+}
+.one span
+ {
+    font-size: 25px;
+}
+.one h2
+ {
+    font-size: 40px;
+} 
+.one p{
+    font-size: 20px;
+}
+.one a
+ {
+    padding: 15px 133px;
+    font-size: 30px;
+}
+.two h3 + ul {
+    width: 80%;
+    margin-left: 14%;
+}
+.two h3 {
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.three span {
+    font-size: 25px;
+}
+.three h4 {
+    font-size: 55px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.three h4 + section > span + span {
+    font-size: 30px;
+}
+}

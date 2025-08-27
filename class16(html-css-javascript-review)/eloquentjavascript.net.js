@@ -59,8 +59,8 @@ function chessboard8x8() {
 function chessboard8x8() {
     let hash = '';
     let rehash = '';
-    let height = 4;
-    let width = 10;
+    let height = 8;
+    let width = 8;
     for(let j = 0; j < height ; j++){
         hash = ' ';
         for(let i = width; i > 0; i--) {

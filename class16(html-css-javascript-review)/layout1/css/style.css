@@ -1,0 +1,30 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  background-color: pink;
+  height: 100px;
+}
+section {
+  height: 200px;
+}
+body > *,
+header + section > section,
+header + section + section > section{
+  border: 1px solid black;
+}
+header + section > section {
+  background-color: rgb(223, 255, 244);
+  float: left;
+  width: 33.3333%;
+}
+header + section + section {
+  background-color: paleturquoise;
+}
+header + section + section > section {
+  float: left;
+  width: 50%;
+}

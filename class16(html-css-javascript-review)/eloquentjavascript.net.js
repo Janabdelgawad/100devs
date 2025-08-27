@@ -5,6 +5,8 @@ function ascendingHash7(){
       console.log(hash);
   }
 }
+//ascendingHash7()
+
 
 function fizzBuzz100(){
     for(let i = 1; i <=100; i++) {
@@ -22,3 +24,35 @@ function fizzBuzz100(){
         }
     }  
 }
+//fizzBuzz100()
+
+
+function chessboard8x8() {
+    let hash = '';
+    let rehash = '';
+    for(let j = 0; j < 4 ; j++){
+        hash = ' ';
+        for(let i = 8; i > 0; i--) {
+            if(i % 2 != 0) {
+                hash += '#'; 
+            }
+            else {
+                hash += ' ';
+            }
+        }
+        rehash = ' ';
+        for(let i = 8; i > 0; i--) {
+            if(i % 2 != 0) {
+                rehash += ' '; 
+            }
+            else {
+                rehash += '#';
+            }
+        }
+        console.log(hash);
+        console.log(rehash);
+    }  
+}
+//chessboard8x8();
+
+

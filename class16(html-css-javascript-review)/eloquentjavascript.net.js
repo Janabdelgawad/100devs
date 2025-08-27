@@ -59,10 +59,11 @@ function chessboard8x8() {
 function chessboard8x8() {
     let hash = '';
     let rehash = '';
-    let size = 10;
-    for(let j = 0; j < size ; j++){
+    let height = 4;
+    let width = 10;
+    for(let j = 0; j < height ; j++){
         hash = ' ';
-        for(let i = 8; i > 0; i--) {
+        for(let i = width; i > 0; i--) {
             if(i % 2 != 0) {
                 hash += '#'; 
             }
@@ -71,7 +72,7 @@ function chessboard8x8() {
             }
         }
         rehash = ' ';
-        for(let i = 8; i > 0; i--) {
+        for(let i = width; i > 0; i--) {
             if(i % 2 != 0) {
                 rehash += ' '; 
             }
@@ -84,5 +85,4 @@ function chessboard8x8() {
     }  
 }
 //chessboard8x8();
-
 

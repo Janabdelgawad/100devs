@@ -1,0 +1,21 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+header,footer {
+  height: 100px;
+  border: 1px solid black;
+}
+section {
+  border: 1px solid black;
+  height: 100px;
+  float: left;
+  width: 33.3333%;
+}
+.bottom {
+  width: 50%;
+}
+footer {
+  clear: left;
+}

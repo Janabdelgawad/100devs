@@ -145,3 +145,34 @@ function countChar(word, char) {
 // console.log(`The letter U was found in the word UOUOUO ${countChar('UOUOUO', 'U')} times.`)
 // console.log(`The letter U was found in the word kakkerlak ${countChar("kakkerlak", "k")} times.`)
 
+
+
+function followingDay(){
+    let dayOfWeek = prompt("What day of the week is it: ").toLowerCase();
+    
+    switch(dayOfWeek){
+        case 'sunday': 
+            console.log('Monday');
+            break;
+        case 'monday':
+            console.log('Tuesday');
+            break;
+        case 'tuesday':
+            console.log('Wednesday');
+            break;
+        case 'wednesday':
+            console.log('Thursday');
+            break;
+        case 'thursday':
+            console.log('Friday');
+            break;
+        case 'friday':
+            console.log('Saturday');
+            break;
+        case 'saturday':
+            console.log('Sunday');
+            break;
+        default:
+            console.log('That is not a weekday, try again.')
+    }
+}

@@ -131,3 +131,17 @@ function countBs(word) {
 // console.log(`The letter B was found in the word Banana ${countBs('Banana')} times.`)
 // console.log(`The letter B was found in the word lala ${countBs('lala')} times.`)
 // console.log(`The letter B was found in the word BoBBY BOB ${countBs('BoBBY BOB')} times.`)
+
+
+
+function countChar(word, char) {
+    let letterCountNumber = 0
+    for(let i = 0; i < word.length; i++) {
+        if(word[i] === char) letterCountNumber++;
+    }
+    return letterCountNumber;
+}
+// console.log(`The letter k was found in the word koko ${countChar('kaka', 'k')} times.`)
+// console.log(`The letter U was found in the word UOUOUO ${countChar('UOUOUO', 'U')} times.`)
+// console.log(`The letter U was found in the word kakkerlak ${countChar("kakkerlak", "k")} times.`)
+

@@ -192,3 +192,50 @@ function numberComparison() {
         console.log('n1 and n2 are equal\n');
     }  
 }
+
+
+
+function daysOfMonth() {
+    let month = Number(prompt('Enter a month number (1-12)'));
+    switch(month) {
+        case 1:
+            console.log('Number of days in january is 31\n');
+            break;
+        case 2:
+            console.log('Number of days in february is 28\n');
+            break;
+        case 3:
+            console.log('Number of days in march is 31\n');
+            break;
+        case 4:
+            console.log('Number of days in april is 30\n');
+            break;
+        case 5:
+            console.log('Number of days in may is 31\n');
+            break;
+        case 6:
+            console.log('Number of days in june is 30\n');
+            break;
+        case 7:
+            console.log('Number of days in july is 31\n');
+            break;
+        case 8:
+            console.log('Number of days in august is 31\n');
+            break;
+        case 9:
+            console.log('Number of days in september is 31\n');
+            break;
+        case 10:
+            console.log('Number of days in october is 31\n');
+            break;
+        case 11:
+            console.log('Number of days in november is 31\n');
+            break;
+        case 12:
+            console.log('Number of days in december is 31\n');
+            break;
+        default:
+        console.log('That is not a month number, try again...\n');
+    }
+}
+daysOfMonth();

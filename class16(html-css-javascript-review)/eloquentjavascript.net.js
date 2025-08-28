@@ -251,3 +251,42 @@ function daysOfMonth() {
 }
 // daysOfMonth();
 
+
+
+// 14h17m59s should give 14h18m0s
+// 6h59m59s should give 7h0m0s
+// 23h59m59s should give 0h0m0s (midnight)
+
+//pseudo code
+//is each 60 or not
+//if num == 59, next num == 00
+//if not sec++
+//concatenate strings
+function followingSecond(){
+    //isolate each of the three
+    let hour = Number(prompt('What hour is it: '));
+    let minute = Number(prompt('What minute is it: '));
+    let second = Number(prompt('What second is it: '));
+    console.log(`${hour}h${minute}m${second}s should give `);
+    
+    //same logic as fizzbuzz
+    if(hour == 24 && minute == 59 && second == 59){
+        hour = 0;
+        minute = 0;
+        second == 0;
+    }
+    else if (minute == 59 && second == 59) {
+        hour++;
+        minute = 0;
+        second = 0;
+    }
+    else if (second == 59) {
+        minute++;
+        second = 0;
+    }
+    else {
+        second++;
+    }
+    console.log(`${hour}h${minute}m${second}s`);
+}
+// followingSecond();

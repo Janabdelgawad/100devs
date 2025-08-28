@@ -469,3 +469,54 @@ function square() {
 }
 
 
+
+
+function min (n1, n2){
+    return n1 < n2 ? n1 : n2;
+}
+// console.log(min(4.5, 5)); // Must show 4.5
+// console.log(min(19, 9));  // Must show 9
+// console.log(min(1, 1));   // Must show 1
+
+
+
+
+function calculate(n1, sign, n2) {
+    switch(sign){
+        case "+":
+            return n1 + n2;
+        case "-":
+            return n1 - n2;
+        case "*":
+            return n1 * n2;
+        case "/":
+            return n1 / n2;
+        default:
+            return 'wrong sign';
+    }
+}
+// console.log(calculate(4, "+", 6));  // Must show 10
+// console.log(calculate(4, "-", 6));  // Must show -2
+// console.log(calculate(2, "*", 0));  // Must show 0
+// console.log(calculate(12, "/", 0)); // Must show Infinity
+
+
+
+
+// c = 2πr
+// A = πr²
+function circAndArea() {
+    let PI = Math.PI;
+    let radius = Number(prompt('Enter the radius: '));
+    function circumference(){
+        return 2 * PI * radius;
+    }
+    function area() {
+        return PI * (radius ** 2);
+    }
+
+console.log(circumference());
+console.log(area());
+}
+// circAndArea();
+

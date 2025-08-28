@@ -369,3 +369,24 @@ function followingSecond(){
     console.log(`${hour}h${minute}m${second}s`);
 }
 // followingSecond();
+
+
+function Carousel(){
+    let turnByUser = Number(prompt('Enter a number: '));
+    for(let i = 0; i < turnByUser; i++) {
+        console.log(i+1);
+    }    
+}
+
+function parity() {
+    let number = Number(prompt('Enter a number: '));
+    for (let i = 1; i <= number; i++) {
+      if (i % 2 === 0) {
+        console.log(`${i} is even`);
+      }
+      
+      if (i % 2 !== 0) {
+        console.log(`${i} is odd`);
+      }
+    }   
+}

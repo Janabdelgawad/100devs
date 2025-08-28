@@ -176,3 +176,19 @@ function followingDay(){
             console.log('That is not a weekday, try again.')
     }
 }
+
+
+
+function numberComparison() {
+    let n1 = Number(prompt('Enter a number: '));
+    let n2 = Number(prompt('Enter a number: '));
+    if(n1 > n2) {
+        console.log('n1 is greater than n2\n');
+    }
+    else if (n1 < n2) {
+        console.log('n1 is less than n2\n');
+    }
+    else {
+        console.log('n1 and n2 are equal\n');
+    }  
+}

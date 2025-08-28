@@ -434,3 +434,38 @@ function FizzBuzzLoop() {
         else console.log(i);
     }    
 }
+
+
+
+function hello() {
+    // Say hello to the user
+    function sayHello(firstName, lastName) {
+      const message = `Hello, ${firstName} ${lastName}!`;
+      return message;
+    }
+    
+    // TODO: ask user for first and last name
+    let first = prompt('What is your first name: ');
+    let last  = prompt('What is your last name: ');
+    // TODO: call sayHello() and show its result
+    console.log(sayHello(first, last));    
+}
+
+
+function square() {
+    // Square the given number x
+    function square1(x) {
+      // TODO: complete the function code
+      return x * x;
+    }
+    
+    // Square the given number x
+    const square2 = x => x * x; // TODO: complete the function code
+    
+    for(let i = 0; i < 10; i++) {
+        console.log(square1(i));
+        // console.log(square2(i));
+    }  
+}
+
+

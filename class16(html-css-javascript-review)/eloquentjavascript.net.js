@@ -398,3 +398,28 @@ function inputValidation(){
         userNumber = Number(prompt('Enter a number: '));
     }    
 }
+
+
+
+function multTable() {
+    let multNumber = Number(prompt("Enter a number: "));
+    let display = '';
+    
+    while(multNumber > 2 && multNumber < 9) {
+        for(let i = 0; i < 13; i++) {
+            display += `${multNumber} x ${i} = ${i * multNumber}\n`;
+        } 
+        return display;
+    }   
+}
+//console.log(multTable() || " ");
+
+
+
+
+function yesNorNo() {
+    let userInput = prompt('Enter text: ').toLowerCase();
+    while(userInput !== 'yes' && userInput !== 'no') {
+    userInput = prompt('Enter text: ').toLowerCase();
+    }   
+}

@@ -290,3 +290,43 @@ function followingSecond(){
     console.log(`${hour}h${minute}m${second}s`);
 }
 // followingSecond();
+
+
+function followingSecond(){
+    //isolate each of the three
+    let hour = Number(prompt('What hour is it: '));
+    let minute = Number(prompt('What minute is it: '));
+    let second = Number(prompt('What second is it: '));
+    if (
+        isNaN(hour) || isNaN(minute) || isNaN(second) ||
+        hour < 0 || hour > 23 ||
+        minute < 0 || minute > 59 ||
+        second < 0 || second > 59
+    ) {
+        console.log("Invalid time input");
+        return;
+    }
+    
+    console.log(`${hour}h${minute}m${second}s should give `);
+    
+    //same logic as fizzbuzz
+    if(hour == 24 && minute == 59 && second == 59){
+        hour = 0;
+        minute = 0;
+        second = 0;
+    }
+    else if (minute == 59 && second == 59) {
+        hour++;
+        minute = 0;
+        second = 0;
+    }
+    else if (second == 59) {
+        minute++;
+        second = 0;
+    }
+    else {
+        second++;
+    }
+    console.log(`${hour}h${minute}m${second}s`);
+}
+// followingSecond();

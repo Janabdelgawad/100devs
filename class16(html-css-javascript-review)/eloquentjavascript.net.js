@@ -116,3 +116,18 @@ function isEven(num) {
 // console.log(`Is the number -2 Even? ${isEven(-2)}`);
 // console.log(`Is the number -50 Even? ${isEven(-50)}`);
 // console.log(`Is the number -75 Even? ${isEven(-75)}`);
+
+
+
+function countBs(word) {
+    let letterCountNumber = 0
+    for(let i = 0; i < word.length; i++) {
+        if(word[i] === 'B') letterCountNumber++;
+    }
+    return letterCountNumber;
+}
+
+// console.log(`The letter B was found in the word BBC ${countBs('BBC')} times.`)
+// console.log(`The letter B was found in the word Banana ${countBs('Banana')} times.`)
+// console.log(`The letter B was found in the word lala ${countBs('lala')} times.`)
+// console.log(`The letter B was found in the word BoBBY BOB ${countBs('BoBBY BOB')} times.`)

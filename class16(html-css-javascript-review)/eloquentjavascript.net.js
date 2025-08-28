@@ -95,3 +95,24 @@ function min(num1, num2) {
 // console.log(min(0, -10));
 // console.log(min(10, 0));
 // console.log(min(20, 30));
+
+
+
+function isEven(num) {
+    let negNum = -1 * num;
+    if(num < 0) num = negNum;  
+    if(num === 0) return 'true';
+    if(num === 1) return 'false';
+    return isEven(num - 2);
+}
+
+// console.log(`Is the number 2 Even? ${isEven(2)}`);
+// console.log(`Is the number 3 Even? ${isEven(3)}`);
+// console.log(`Is the number 4 Even? ${isEven(4)}`);
+// console.log(`Is the number 5 Even? ${isEven(5)}`);
+// console.log(`Is the number 50 Even? ${isEven(50)}`);
+// console.log(`Is the number 75 Even? ${isEven(75)}`);
+// console.log(`Is the number -1 Even? ${isEven(-1)}`);
+// console.log(`Is the number -2 Even? ${isEven(-2)}`);
+// console.log(`Is the number -50 Even? ${isEven(-50)}`);
+// console.log(`Is the number -75 Even? ${isEven(-75)}`);

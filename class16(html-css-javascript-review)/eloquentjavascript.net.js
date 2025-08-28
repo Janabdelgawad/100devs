@@ -270,10 +270,10 @@ function followingSecond(){
     console.log(`${hour}h${minute}m${second}s should give `);
     
     //same logic as fizzbuzz
-    if(hour == 24 && minute == 59 && second == 59){
+    if(hour == 23 && minute == 59 && second == 59){
         hour = 0;
         minute = 0;
-        second == 0;
+        second = 0;
     }
     else if (minute == 59 && second == 59) {
         hour++;

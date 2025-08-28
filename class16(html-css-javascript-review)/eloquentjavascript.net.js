@@ -390,3 +390,11 @@ function parity() {
       }
     }   
 }
+
+
+function inputValidation(){
+    let userNumber = Number(prompt('Enter a number: '));
+    while(userNumber < 50 || userNumber > 100) {
+        userNumber = Number(prompt('Enter a number: '));
+    }    
+}

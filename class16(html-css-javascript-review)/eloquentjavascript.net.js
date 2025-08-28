@@ -238,4 +238,16 @@ function daysOfMonth() {
         console.log('That is not a month number, try again...\n');
     }
 }
-daysOfMonth();
+// daysOfMonth();
+
+function daysOfMonth() {
+    let month = Number(prompt('Enter a month number (1-12): '));
+    let days = 0;
+    if(month == 2) days = 28;
+    else if(month==4 || month==6 || month==9 || month==11) days = 30;
+    else days = 31;
+    
+    console.log(`The month ${month} has ${days} days.\n`);
+}
+// daysOfMonth();
+

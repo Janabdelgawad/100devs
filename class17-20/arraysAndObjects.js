@@ -42,3 +42,52 @@ function listOfWords(){
    console.log(`The list of words provided by you until stop is: [${arr}]`);
 }
 // listOfWords();
+
+
+function camelize(str) {
+    let first = str.split('-');
+    console.log(first);
+
+    let uppered = first.map((item, index) => {
+    return index == 0 ? item : item[0].toUpperCase() + item.slice(1)        
+    })
+
+    console.log(uppered);
+    
+    let joined = uppered.join('');
+    console.log(joined);
+}
+// camelize('background-color')
+
+function filterRange(a, b) {
+    let arr = [5, 3, 8, 1];
+    return arr.filter(item => ( item >= a && item <= b));
+}
+// console.log(filterRange(1, 4));
+
+function filterRangeInPlace(a, b) {
+    let arr = [5, 3, 8, 1];
+  for (let i = 0; i < arr.length; i++) {
+    let val = arr[i];
+
+    // remove if outside of the interval
+    if (val < a || val > b) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+  console.log(arr)
+}
+// filterRangeInPlace(1, 4);
+
+function descOrder() {
+    let arr = [5, 2, 1, -10, 8];
+    return arr.sort((a, b) => b - a);
+}
+// console.log(descOrder());
+
+function copySorted() {
+    let arr = ["HTML", "JavaScript", "CSS"];
+    return arr.slice().sort();
+}
+// console.log(copySorted());

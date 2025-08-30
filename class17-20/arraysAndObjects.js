@@ -153,3 +153,12 @@ function arrayEvenNums(arr) {
 }
 console.log(arrayEvenNums([1,2,3,4,5,6]))
 
+
+function arrayEvenNums(arr) {
+    //new array
+    let evens = [];
+    //traverse
+    arr.map(element => (element % 2 === 0)? evens.push(element) : 'NAN')
+    return evens;
+}
+// console.log(arrayEvenNums([1,2,3,4,5,6]))

@@ -91,3 +91,30 @@ function copySorted() {
     return arr.slice().sort();
 }
 // console.log(copySorted());
+
+
+let secChar = 'lalole';
+console.log(secChar.charAt(1));
+
+function divide3MultLast(n1, n2, n3){
+    return (n1 / n2) * n3;
+}
+
+function cubeRoot(num) {
+    console.log(Math.cbrt(num));
+}
+
+function checkMonth(month) {
+    console.log(month === 'june' || month==='july' ||month==='august' ? 'YAY' : 'Booo');
+}
+
+function logAndSkip5(nums) {
+    // for(num of nums) {
+    //     if(num % 5 === 0) continue;
+    //     console.log(num + '\n');
+    // }
+    
+    for(let i =1; i<= nums.lengt; i++) {
+        if(i % 5 !== 0) console.log(num + '\n');
+    }
+}

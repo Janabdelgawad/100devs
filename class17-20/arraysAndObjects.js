@@ -118,3 +118,38 @@ function logAndSkip5(nums) {
         if(i % 5 !== 0) console.log(num + '\n');
     }
 }
+
+
+
+function greeting(arr) {
+    const first = arr[0];
+    const last  = arr[arr.length - 1];
+    if(first < last) console.log('Hi');
+    else if(first > last) console.log('Bye');
+    else console.log('We close in an hour')
+}
+// let arr = [1,4,5,6];
+// greeting(arr);
+
+function multAndConsoleArr(arr) {
+    let product = 1;
+    arr.forEach(item => product *= item)
+    console.log(product)
+}
+// let arr2 = [10, 20, 30];
+// multAndConsoleArr(arr2);
+
+function arrayEvenNums(arr) {
+    //new array
+    let evens = [];
+    //traverse
+    arr.forEach(element => {
+        //check even
+        if(element % 2 === 0) {
+            evens.push(element);
+        }
+    })
+    return evens;
+}
+console.log(arrayEvenNums([1,2,3,4,5,6]))
+

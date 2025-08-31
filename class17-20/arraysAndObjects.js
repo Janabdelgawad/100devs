@@ -162,3 +162,83 @@ function arrayEvenNums(arr) {
     return evens;
 }
 // console.log(arrayEvenNums([1,2,3,4,5,6]))
+
+
+
+function logObjName() {
+    let john = { name: "John", age: 25 };
+    let pete = { name: "Pete", age: 30 };
+    let mary = { name: "Mary", age: 28 };
+    
+    let users = [ john, pete, mary ];
+    
+    let newNames = [];
+    let names = Array.from(users).forEach(e => {
+        newNames.push(e.name)
+    // let names = users.map(item => item.name)
+    })
+    console.log( newNames ); // John, Pete, Mary
+}
+
+function logNewObj(){
+    let john = { name: "John", surname: "Smith", id: 1 };
+    let pete = { name: "Pete", surname: "Hunt", id: 2 };
+    let mary = { name: "Mary", surname: "Key", id: 3 };
+    
+    let users = [ john, pete, mary ];
+    
+    let newUsers = users.map(item => ({
+    fullName: `${item.name}, ' ', ${item.surname}`,
+    id: item.id
+    }))
+    console.log(newUsers)
+    console.log( newUsers[0].id ) // 1
+    console.log( newUsers[0].fullName ) // John Smith
+}
+
+function sortByAge() {
+    let john = { name: "John", age: 25 };
+    let pete = { name: "Pete", age: 30 };
+    let mary = { name: "Mary", age: 28 };
+    let arr = [ pete, john, mary ];
+    
+    //access array of objects
+    arr.sort((a, b) => a.age - b.age)
+    console.log(arr)
+}
+// sortByAge();
+
+//DOESNT WORK 
+// function shuffle() {
+//     let arr = [1, 2, 3];
+//     let rand = Math.floor(Math.random() * arr.length);
+//     arr.map((item,index]) => item[rand])
+//     console.log(arr)
+    
+// }
+// shuffle()
+
+function getAverageAge() {
+    let john = { name: "John", age: 25 };
+    let pete = { name: "Pete", age: 30 };
+    let mary = { name: "Mary", age: 29 };
+    
+    let arr = [ john, pete, mary ];
+    
+    let result = 
+    arr.reduce((sum, current) => sum + current.age, 0);
+    console.log(result/arr.length)
+}
+// getAverageAge()
+
+
+function unique() {
+    let strings = ["Hare", "Krishna", "Hare", "Krishna",
+      "Krishna", "Krishna", "Hare", "Hare", ":-O"
+    ];
+    // if index of 1st occurrence === index of current item; current item is first occurrence in the array.
+    let newString = strings.filter((a,b) => strings.indexOf(a) === b)
+    console.log(newString)
+    
+}
+// unique()

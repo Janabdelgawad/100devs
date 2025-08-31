@@ -242,3 +242,53 @@ function unique() {
     
 }
 // unique()
+
+
+
+function creatingObj() {
+    const dog = {
+        name: 'fang',
+        species: 'boarhound',
+        size: 75,
+        bark() {
+            return 'Grrr! Grrr!';
+        }
+    };
+    
+    console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
+    console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);    
+}
+
+
+function circleObj() {
+    const r = Number(prompt("Enter the circle radius:"));
+    
+    const circle = {
+        circumference(){
+            return 2 * Math.PI * r
+        },
+        area() {
+            return  Math.PI * (r ** 2)    
+        }
+    };
+    
+    console.log(`Its circumference is ${circle.circumference()}`);
+    console.log(`Its area is ${circle.area()}`);    
+}
+
+function accountBalance() {
+    const account = {
+        name: 'Alex',
+        balance: 0,
+        credit(value) {
+            return this.balance += value;
+        },
+        describe() {
+            return `"owner: ${this.name}, balance ${this.balance}"`;
+        }
+    };
+    console.log(account.describe());
+    account.credit(250); //crediting
+    account.credit(-80); //debiting
+    console.log(account.describe());    
+}

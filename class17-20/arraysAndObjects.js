@@ -449,3 +449,48 @@ function reverseString(str) {
     // console.log(str.split("").reverse().join(""));
 }
 // reverseString('ilovethis')
+
+function objectLiteral() {
+    let mouse = {}
+    mouse.shape = 'oval'
+    mouse.size = 'small'
+    mouse.design = 'ergonomic'
+    mouse.brand = 'legion'
+    
+    mouse.leftClick = function(){
+        console.log('left click')
+    }
+    mouse.rightClick = function() {
+        console.log('right click')
+    }
+    mouse.doubleClick = function() {
+        console.log('double click')
+    }
+    
+    console.log(mouse)    
+}
+
+// function MakeCar() {
+//     this.make = carMake
+//     this.model = carModel
+// }
+
+// let honda = new MakeCar()
+
+function Fighter(name, health, power, potion) {
+    this.name   = name
+    this.health = health
+    this.power  = power
+    this.potion = potion
+    this.kill   = function(){
+        console.log('killll')
+    }
+    this.run    = function(){
+        console.log('runnnn')
+    }
+    this.defend = function(){
+        console.log('defend')
+    }
+}
+// let powerRanger = new Fighter('power ranger', 100, 100, 5);
+// console.log(powerRanger.kill())

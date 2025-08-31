@@ -292,3 +292,74 @@ function accountBalance() {
     account.credit(-80); //debiting
     console.log(account.describe());    
 }
+
+
+// let favHoliday = 'new years eve'.toUpperCase()
+// console.log(favHoliday)
+
+// let alertLastThree = 'idontknow'
+// console.log(alertLastThree.substr(-3))
+
+function absDiff(n1, n2, n3, n4, n5) {
+    let from100 = 100 - n1 - n2 - n3 - n4 -n5
+    console.log(Math.abs(from100))
+}
+
+function lowestHighestVals(n1, n2, n3) {
+    let max = Math.max(n1, n2, n3);
+    let min = Math.min(n1, n2, n3);
+    console.log(`max: ${max} min: ${min}`);
+}
+
+const headOrTail = _ => Math.random() < 0.5 ? "head" : "tail"
+
+function loopHeadOrTail(num){
+    for(let i=0;i<num;i++) {
+        let result = headOrTail()
+        console.log(result)
+    }
+}
+// loopHeadOrTail(10)
+
+function arrayPractice() {
+    let tvShows = ['black mirror', 'orphan black', 'how to get away with murder']
+    tvShows.forEach(show => console.log(show));
+    
+    let arr3 = [10, 21, 30, 43]
+    let evenNums = arr3.filter(num => num % 2 === 0)
+    //  console.log(evenNums)
+    
+    function secondSum(){
+        let arr = [68,73,19,52,48,5,0,99]
+        let rar = arr.sort((a, b) => a - b, 0)
+        console.log(`the array [${arr}]:\n the second lowest number is: ${rar[1]}\n the second highest number is ${rar[rar.length - 2]}\n their sum is: ${rar[1] + rar[rar.length - 2]}`)
+    }
+    // secondSum()    
+} 
+
+function stopWatchObject() {
+    let stopWatch = {
+        shape: 'circular',
+        color: 'black',
+        button: 'side',
+        buttonColor: 'yellow',
+        clock: 12,
+        start(){
+            
+        },
+        stop() {
+            
+        }, eraseTimer() {
+        }
+        
+    }
+}
+
+function remove(array, index){
+    return array.slice(0, index).concat(array.slice(index + 1));
+}
+let arr = ['la', 'de', 'khe', 'ce', 'fe', 'be', 'b']
+// console.log(arr)
+// let removeInstance = remove(arr, arr.length-1)
+// console.log(removeInstance)
+// console.log(arr[0].padStart(7, "0"));

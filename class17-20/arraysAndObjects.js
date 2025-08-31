@@ -363,3 +363,89 @@ let arr = ['la', 'de', 'khe', 'ce', 'fe', 'be', 'b']
 // let removeInstance = remove(arr, arr.length-1)
 // console.log(removeInstance)
 // console.log(arr[0].padStart(7, "0"));
+
+
+
+function classwork(){
+    let favDrink = ' pina colada mojito '
+    console.log(favDrink)
+    favDrink = favDrink.trim()
+    console.log(favDrink)
+    
+    const findApple = 'i am not an apple la la';
+    findApple.includes('apple')? console.log('lolo') : console.log('hara')    
+}
+
+function rockPaperSci() {
+    let choice = Math.floor(Math.random() * 3 + 1);
+    switch(choice) {
+        case 1: 
+            return('rock');
+        case 2:
+            return('paper');
+        case 3:
+            return('scissors');
+        default:
+            return('???');
+    }
+}
+// rockPaperSci();
+
+function gameResult(choice) {
+    //result
+    let result = '';
+    //play game for bot
+    const botChoice = rockPaperSci();
+    //won or lost condition
+    if(choice == botChoice) result = 'draw';
+    //rockpaper rockscissor paperscissor 
+    else if(choice == 'rock' && botChoice == 'scissors' ||
+            choice == 'paper'&& botChoice == 'rock' ||
+            choice == 'scissors' && botChoice == 'paper') 
+            result = 'you won'
+            
+    else result = 'bot won'
+    
+    let resultDisplay = `your choice: ${choice}\nbot  choice: ${botChoice}\n${result}\n`;
+
+    // dispaly msg
+    console.log(resultDisplay);
+}
+// gameResult('paper');
+
+
+function regame(choices) {
+    for(let i=0;i<choices.length;i++) {
+        console.log(`Game trial: ${i+1}`);
+        gameResult(choices[i]);
+    }
+}
+// regame(['rock', 'paper', 'scissors']);
+
+function sumArray() {
+    let arr = [1,2,3,4,5,6,7];
+    let reducedArr =arr.reduce((sum,current)=>sum+current, 0);
+    console.log(reducedArr)    
+}
+
+function squaredArray(nums) {
+    let squared = nums.map(item => item * item)
+    console.log(squared)
+}
+// squaredArray([10,20,2,4])
+
+function reverseString(str) {
+    // let reversed = Array.from(str).map((item,index) => item = item[item.length-1])
+    let arrify = Array.from(str);
+    let newArr = []
+    for(let i = arrify.length-1; i>=0;i--) {
+        newArr.push(arrify[i])
+    }
+    console.log(newArr)
+    
+    // let lelo = arrify.map(char => char.pop())
+    // console.log(lelo)
+    
+    // console.log(str.split("").reverse().join(""));
+}
+// reverseString('ilovethis')

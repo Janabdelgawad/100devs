@@ -494,3 +494,48 @@ function Fighter(name, health, power, potion) {
 }
 // let powerRanger = new Fighter('power ranger', 100, 100, 5);
 // console.log(powerRanger.kill())
+
+
+function range(start, end, step = 1) {
+    let arr = [];
+    for(let i = start; (step > 0) ? i <= end : i >= end ; i+=step) {
+        arr.push(i);
+    }        
+    return arr;
+}
+// console.log(range(5,2, -1))
+
+function sum(arr) {
+    const reduced = arr.reduce((sum, current) => sum + current,0);
+    return reduced
+}
+// console.log(sum(range(1, 10)))
+
+function reverseArray(arr) {
+    let newArr = [];
+    // for(let i = arr.length - 1; i >= 0; i--) {
+    //     newArr.push(arr[i]);
+    // }
+    arr.forEach(element => newArr.unshift(element))
+    
+    return newArr;
+}
+// console.log(reverseArray(['A', 'B', 'C']))
+
+function deepEqual(val1, val2) {
+    if(typeof val1 == "object" && val1 != null) &&
+      (typeof val2 == "object" && val2 != null) {
+    
+    //returned early and dont  have to nest another if
+    if (Object.keys(val1).length !== Object.keys(val2).length) return false;
+            
+            //objects dont have .length property; to loop over
+            for(let key of Object.keys(val1)) {
+                
+                if(!(val2.hasOwnProperty(key)) || !deepEqual(val1[key], val2[key]))
+                    return false
+            }
+                return true
+    } 
+    return val1 === val2
+}

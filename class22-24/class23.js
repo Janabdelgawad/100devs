@@ -78,3 +78,45 @@ function palindrome(str) {
     return (str === newString) ? 'palindrome' : 'not a palindrome'
 }
 // console.log(palindrome('nan'))
+
+
+function createObj() {
+    let dog = {};
+    
+    dog.breed  = 'chiwawa'
+    dog.size   = 'small'
+    dog.age    = 'newborn'
+    dog.weight = 5
+    
+    dog.sound = function() {console.log('bark')}
+    dog.sleep = () => {return 10}
+    dog.diet  = () => {return 'carnivore'}
+    
+    console.log(dog)    
+}
+
+function Princess(name, age, knownFor, rat) {
+    this.name     = name;
+    this.age      = age;
+    this.knownFor = knownFor;
+    this.rat      = rat;
+    
+    this.greet    = () => (`Hi im ${this.name}`);
+    this.cussRat  = () => (`my precious husband is ${this.rat}!`);
+    this.farewell = () => (`Bye Bye...\n`);
+}
+
+let princess1 = new Princess('barbie', 21, 'doll', 'ken');
+console.log(princess1);
+console.log(princess1.greet());
+console.log(princess1.cussRat());
+console.log(princess1.farewell());
+
+let princess2 = new Princess('bella', 22, 'reads', 'beast')
+console.log(princess2);
+console.log(princess2.greet());
+console.log(princess2.cussRat());
+console.log(princess2.farewell());
+
+// what is an API?
+// a simple interface for a complex object(server)

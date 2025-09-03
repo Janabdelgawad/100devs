@@ -50,3 +50,31 @@ function game(choices) {
     }
 }
 // game(['rock', 'rock', 'paper', 'scissors']);
+
+
+let numbers = [10, 20, 30, 40];
+//console.log(numbers.reduce((acc, curr) => acc + curr));
+
+function squaredNums(nums) {
+    return nums.map(num => num * 2);
+}
+//console.log(squaredNums(numbers));
+
+function reversedString(str) {
+    let str2 = Array.from(str)
+    let popped;
+    // let newString = [];
+    // for(let i = 0; i < str.length; i++){
+    //     popped = str2.pop();
+    //     newString.push(popped);        
+    // } 
+    let newString = str.split('').reverse().join('')
+    return newString;
+}
+// console.log(reversedString('reverse this'));
+
+function palindrome(str) {
+    let newString = reversedString(str);
+    return (str === newString) ? 'palindrome' : 'not a palindrome'
+}
+// console.log(palindrome('nan'))

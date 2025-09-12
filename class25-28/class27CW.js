@@ -9,7 +9,6 @@
 // what are the 4 main methods that local storage provide?
 // get, set, remove, and clear items
 
-
 class Netflix {
   constructor(title, seasons, genre, year) {
     this.title     = title;

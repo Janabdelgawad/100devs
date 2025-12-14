@@ -53,7 +53,13 @@ function squaresAndCubes(){
     return (squares_instance > cubes_instance)
 }
 // console.log(squaresAndCubes());
-
+function leonsSolution(a,b){
+    let A = a.reduce((acc, c)=> acc + c**2, 0)
+    let B = b.reduce((acc, c)=> acc + Math.pow(c, 3), 0)
+    console.log(`A: ${A}, B: ${B}`)
+    return A > B;
+}
+// console.log(leonsSolution(a,b));
 //Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
 // Some cases:
 // [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
@@ -73,8 +79,27 @@ function indexMultiples(arr) {
 
 function intAsStrAndNum() {
     let arr = [1, '2', 3, '4'];
-    let sum = arr.reduce((total, e) => total += Number(e), 0) // 0 is the starting value for total
+    let sum = arr.reduce((total, e) => total + Number(e), 0) // 0 is the starting value for total
 
     return sum
 }
 // console.log(intAsStrAndNum());
+
+//leon's solution
+//const s = r => r.reduce((a,c) => +a+ +c)
+// console.log(s([1, '2', 3, '4']));
+
+//forEach: returns undefined, good for side effects only, ex: logging, mutating an external state (doing something to every element)
+//map:     returns a new array, same length as original, converts each item into something else (must return something for every element)
+//filter:  returns a new array, different length  from original, converts each or some items into something else (not required to return something for every element)
+
+// | Goal                          | Use       |
+// | ----------------------------- | --------- |
+// | Nothing (side effects)        | `forEach` |
+// | Same number of items, changed | `map`     |
+// | Fewer items                   | `filter`  |
+
+
+// forEach = do
+// map = transform
+// filter = select

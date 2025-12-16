@@ -1,0 +1,11 @@
+What is Encapsulation?
+the process of storing methods with their associated properties in one object
+
+Why do we need encapsulation?
+to add new functionalities without breaking code
+  
+What is Abstraction?
+Hiding details & showing essentials
+
+Why do we need abstraction?
+smaller more manageable pieces of code

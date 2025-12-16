@@ -1,0 +1,45 @@
+A class can only contain what?
+methods
+
+What does 'this' represent?
+the object on which a method was called
+
+What is a prototype is javascript?
+an internal reference to another object
+
+What does javascript use to create relationships between objects?
+prototypes
+
+What happens when a missing property is called on an object?
+it's looked up on the prototype chain.
+
+What kind of relationship is this? 'object gives part of its operation to its prototype'
+delegation
+
+In javascript objects share _ _ _ _ and delegate _ _ _ _ .
+share properties & delegate behaviours
+
+What is a class in javascript (object/static blueprint 'template')?
+a class is an object in javascript
+
+What does instantiating a class do in javascript?
+create a new object linked to a prototype object
+
+The _ __ _ syntax is merely a more convenient way to create relationships between objects through prototypes
+class
+
+Why were classes introduced to javascript?
+to emulate the class-based OOP model
+on top of JavaScript's own prototype-based OOP model.
+
+What is OOP?
+a programming paradigm 
+that uses objects 
+containing data & behaviour 
+to create programs
+
+
+
+
+
+

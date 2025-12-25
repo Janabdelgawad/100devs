@@ -9,3 +9,7 @@ Hiding details & showing essentials
 
 Why do we need abstraction?
 smaller more manageable pieces of code
+
+What is inheritance?
+to make a class from another class for a hierarchy of classes,
+that share a set of properties & methods

@@ -10,7 +10,7 @@ Hiding details & showing essentials
 Why do we need abstraction?
 smaller more manageable pieces of code
 
-What is inheritance?
+What is Inheritance?
 to make a class from another class for a hierarchy of classes,
 that share a set of properties & methods
 
@@ -19,3 +19,9 @@ to get rid of redundant code (apply DRY)
 
 Sibling descendants of a base class will have the same _ __ _ __ _, but varying _ _ __ _ _.
 interface, implementation
+
+What is Polymorphisim?
+code with an interface, know how to work with different objects, with the same interface
+
+Why do we need polymorphisim?
+to avoid abusing control flow cases

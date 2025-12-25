@@ -13,3 +13,6 @@ smaller more manageable pieces of code
 What is inheritance?
 to make a class from another class for a hierarchy of classes,
 that share a set of properties & methods
+
+Sibling descendants of a base class will have the same _ __ _ __ _, but varying _ _ __ _ _.
+interface, implementation
